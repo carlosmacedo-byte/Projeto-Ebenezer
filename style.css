@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rochester&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rochester', cursive;
+}
+
+body{
+    background: #E6BCC9;
+}
+
+/* CABEÇALHO */
+
+header{
+    display: inline-block;
+    margin: 10px 0px;
+    width: 73%; 
+    padding: 15px 10px;
+    border: 2px solid #5F291A;
+    border-radius: 40px;
+    background: rgba(95, 41, 26, 0.3);
+    position: fixed;
+    left: 27.5vh;
+    right: 20vh;
+    z-index: 1000;
+}
+ 
+h1{
+    display: inline-block;
+    color: #000;
+    font-size: 40px;
+    font-weight: 900;
+    position: relative;
+    left: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1:hover {
+    color: #fff;
+    transform: translateY(-0.5px) scale(1.05);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* CONFIGURAÇÕES DOS BOTÕES */
+
+button {
+    cursor: pointer;
+ }
+
+.button-header1 {
+    display: inline-block;
+    position: relative;
+    left: 15px;
+    bottom: 4px;
+    background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 2px solid #5F291A;
+}
+
+.button-header1:hover {
+   background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
+    transform: translateY(-0.5px) scale(1.05);
+    transition: all 0.3s ease;
+    border-color: #fff;
+}
+
+.button-header2 {
+    display: inline-block;
+    position: relative;
+    left: 260px;
+    bottom: 5px;
+    background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
+    padding: 5px 20px;
+    border-radius: 50px;
+    border: 2px solid #5F291A;
+}
+
+.button-header2:hover {
+    background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
+    transform: translateY(-0.5px) scale(1.05);
+    transition: all 0.3s ease;
+    border-color: #fff;
+}
+
+.button-one {
+    display: block;
+    align-items: center;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 2px solid #5F291A;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button-one:hover {
+        background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
+        transform: translateY(-0.5px) scale(1.05);
+        transition: all 0.3s ease;
+        color: #fff;
+        border-color: #fff;
+}
+
+/* CONFIGURAÇÕES DAS IMAGENS */
+
+.img-header {
+    width: 40px;
+    height: 40px;
+}
+
+.img-one {
+    width: 994px;
+    height: 393px;
+    border-radius:30px;
+    display: inline-block;
+    position:relative;
+    top: 120px;
+    left: 135px;
+}
+
+.img-two {
+    width: 500px;
+    height: 550px;
+    display: inline-block;
+    position: relative;
+    top: 180px;
+}
+
+/* CONFIGURAÇÕES DOS TEXTOS */
+
+#pai {
+ width: 200vh;
+ position: relative;
+ top: 100px;
+}
+
+.text-one {
+    font-size: 50px;
+    font-weight: 600;
+    margin: 30px 0px 0px 0px;
+    text-align: center;
+}
+
+.text-two {
+    font-size: 80px;
+    font-weight: 600;
+    margin: 30px 0px;
+    text-align: center;
+}
+
+.text-two-p1 {
+    font-size: 20px;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+    width: 55%;
+    margin: 20px 0 50px 290px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text-two-p2 {
+    font-size: 20px;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    margin-bottom: 200px;
+
+}
+
+.text-tree {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.text-fuor {
+    font-size: 80px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    top: 100px;
+}
+    
+strong {
+    font-size: 25px;
+}
+
+b {
+    font-size: 25px;
+}
+
+/* CONFIGURAÇÕES DOS CARDS */
+
+#div-one {
+    width: 200vh;
+    display: inline-block;
+    position:relative;
+    top: 80px;
+ }
+
+.card-confeitaria {
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0);
+    transform: translateZ(0);
+    contain: content;
+    background: #5F291A;
+    font-size: 30px;
+    color: white;
+    margin: 15px;
+    position: relative;
+    left: 78px;
+}
+
+.card-confeitaria:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.15);
+    border-color: #ffffff;
+}
+
+.card-confeitaria img {
+    width: 300px;
+    height:350px; 
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    will-change: transform;
+}
+
+.card-confeitaria:hover img {
+    transform: scale(1.02);
+}
+
+.aling {
+    display:inline-block;
+    width: 550px;
+
+}
+
+
