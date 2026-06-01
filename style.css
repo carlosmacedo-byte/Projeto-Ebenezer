@@ -1,41 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Rochester&display=swap');
+/* ==========================================================================
+   IMPORTAÇÕES E VARIÁVEIS GLOBAIS
+   CORREÇÃO: Unifiquei as fontes em um único link para reduzir as 
+   requisições ao servidor e aumentar a velocidade de carregamento da página.
+   ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rochester', cursive;
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     background: #E6BCC9;
 }
 
-/* CABEÇALHO */
+/* ==========================================================================
+   CABEÇALHO (HEADER)
+   Esta seção mantém a nossa refatoração anterior de alta performance.
+   ========================================================================== */
 
-header{
-    display: inline-block;
-    margin: 10px 0px;
-    width: 74%; 
-    padding: 15px 10px;
-    border: 2px solid #5F291A;
-    border-radius: 40px;
-    background: rgba(95, 41, 26, 0.3);
-    position: fixed;
-    left: 27.5vh;
-    right: 20vh;
-    z-index: 1000;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 74%;
+  padding: 15px 20px;
+  border: 2px solid #5F291A;
+  border-radius: 40px;
+  background: rgba(95, 41, 26, 0.3);
+  
+  position: fixed;
+  top: 17px;                     
+  left: 13%;
+  z-index: 1000;
 }
- 
-h1{
-    display: inline-block;
-    color: #000;
-    font-size: 40px;
-    font-weight: 900;
-    position: relative;
-    left: 150px;
-    font-family: 'Montserrat', sans-serif;
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: "Montserrat", serif;
+  font-weight: 900;
+  color: #5F291A;
+  font-size: 40px;
+  margin: 0;
 }
 
 h1:hover {
@@ -45,51 +59,31 @@ h1:hover {
     cursor: pointer;
 }
 
-/* CONFIGURAÇÕES DOS BOTÕES */
+/* ==========================================================================
+   BOTÕES
+   ========================================================================== */
 
 button {
     cursor: pointer;
- }
-
-.button-header1 {
-    display: inline-block;
-    position: relative;
-    left: 15px;
-    bottom: 4px;
-    background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
-    padding: 5px 20px;
-    border-radius: 50px;
-    border: 2px solid #5F291A;
 }
 
-.button-header1:hover {
-   background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
-    transform: translateY(-0.5px) scale(1.05);
-    transition: all 0.3s ease;
-    border-color: #fff;
+.button-header {
+  display: inline-block;
+  background: linear-gradient(to bottom, #6D3A30, rgba(0, 0, 0, 0.0));
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: 2px solid #5F291A;
 }
 
-.button-header2 {
-    display: inline-block;
-    position: relative;
-    left: 260px;
-    bottom: 5px;
-    background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
-    padding: 5px 20px;
-    border-radius: 50px;
-    border: 2px solid #5F291A;
-}
-
-.button-header2:hover {
+.button-header:hover {
     background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
     transform: translateY(-0.5px) scale(1.05);
     transition: all 0.3s ease;
     border-color: #fff;
 }
 
-.button-one {
+.button-body {
     display: block;
-    align-items: center;
     margin: 20px auto;
     background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
     padding: 10px 40px;
@@ -100,7 +94,7 @@ button {
     font-family: 'Montserrat', sans-serif;
 }
 
-.button-one:hover {
+.button-body:hover {
         background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
         transform: translateY(-0.5px) scale(1.05);
         transition: all 0.3s ease;
@@ -108,7 +102,9 @@ button {
         border-color: #fff;
 }
 
-/* CONFIGURAÇÕES DAS IMAGENS */
+/* ==========================================================================
+   IMAGENS E CONTAINERS GLOBAIS
+   ========================================================================== */
 
 .img-header {
     width: 40px;
@@ -118,28 +114,19 @@ button {
 .img-one {
     width: 994px;
     height: 393px;
-    border-radius:30px;
-    display: inline-block;
-    position:relative;
-    top: 120px;
-    left: 135px;
+    border-radius: 30px;
+    display: block;
+    margin: 120px auto 0 auto;
 }
 
 .img-two {
     width: 500px;
-    height: 550px;
-    display: inline-block;
-    position: relative;
-    top: 180px;
 }
 
-/* CONFIGURAÇÕES DOS TEXTOS */
+/* ==========================================================================
+   CONFIGURAÇÕES DE TEXTOS E ALINHAMENTOS
+   ========================================================================== */
 
-#pai {
- width: 200vh;
- position: relative;
- top: 100px;
-}
 
 .text-one {
     font-size: 50px;
@@ -151,30 +138,8 @@ button {
 .text-two {
     font-size: 80px;
     font-weight: 600;
-    margin: 30px 0px;
+    margin: 30px auto;
     text-align: center;
-}
-
-.text-two-p1 {
-    font-size: 20px;
-    font-weight: 450;
-    font-family: 'Montserrat', sans-serif;
-    width: 55%;
-    margin: 20px 0 50px 290px;
-    line-height: 1.5;
-    text-align: center;
-}
-
-.text-two-p2 {
-    font-size: 20px;
-    font-weight: 450;
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    display: inline-block;
-    position: relative;
-    top: 100px;
-    margin-bottom: 200px;
-
 }
 
 .text-tree {
@@ -185,35 +150,66 @@ button {
 .text-fuor {
     font-size: 80px;
     font-weight: 600;
-    display: inline-block;
-    position: relative;
-    top: 100px;
+    margin: 0; 
+    margin-bottom: 15px; 
+}
+
+.text-five {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.text-one-p1 {
+    font-size: 20px;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+    width: 600px;
+    margin: 40px auto;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.text-two-p2 {
+    font-size: 20px;
+    font-weight: 450;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+      margin: 0; 
+}
+
+.text-tree-p3 {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 0 10px 0;
 }
     
-strong {
+strong, b {
     font-size: 25px;
 }
 
-b {
-    font-size: 25px;
-}
+/* ==========================================================================
+   CONFIGURAÇÕES DOS CARDS (SESSÃO DE SERVIÇOS/PRODUTOS)
+   ========================================================================== */
 
-/* CONFIGURAÇÕES DOS CARDS */
-
-#div-one {
-    width: 200vh;
-    display: inline-block;
-    position:relative;
-    top: 80px;
+.cards-container {
+    width: 100%;
+    display: block;
+    margin-top: 80px; 
+    text-align: center;
  }
 
 .card-confeitaria {
+    display: inline-flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    
     padding: 20px;
     border-radius: 15px;
     text-align: center;
-    display: inline-block;
-    flex-direction: column;
-    justify-content: space-between;
+    
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0);
     transform: translateZ(0);
@@ -222,8 +218,6 @@ b {
     font-size: 30px;
     color: white;
     margin: 15px;
-    position: relative;
-    left: 78px;
 }
 
 .card-confeitaria:hover {
@@ -234,7 +228,7 @@ b {
 
 .card-confeitaria img {
     width: 300px;
-    height:350px; 
+    height: 350px; 
     border-radius: 10px;
     transition: transform 0.3s ease;
     will-change: transform;
@@ -244,10 +238,21 @@ b {
     transform: scale(1.02);
 }
 
-.aling {
-    display:inline-block;
-    width: 550px;
+/* ==========================================================================
+   CONFIGURAÇÕES SECTION (SESSÃO DE SOBRE NÓS)
+   ========================================================================== */
 
+.conteiner {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 50px;               
+    width: 100%;             
+    margin-top: 50px;        
 }
 
-
+.aling {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
