@@ -112,7 +112,7 @@ button {
 }
 
 .img-one {
-    width: 994px;
+    width: 80vw;
     height: 393px;
     border-radius: 30px;
     display: block;
@@ -256,3 +256,8 @@ strong, b {
     flex-direction: column;
     width: 550px;
 }
+
+
+
+
+    
