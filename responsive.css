@@ -112,9 +112,9 @@
 }
 
 .card-confeitaria {
-    min-width: 80vw; 
-    max-width: 80vw;
-    flex: 0 0 80vw;
+    min-width: 67vw; 
+    max-width: 67vw;
+    flex: 0 0 67vw;
     scroll-snap-align: center; 
     margin: 0;
     padding: 20px;
