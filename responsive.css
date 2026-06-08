@@ -32,8 +32,8 @@
 .text-two {
     font-size: 50px;
     font-weight: 600;
-    margin: 60px auto 0 auto;
     text-align: center;
+    margin: 20px 0;
 }
 
 .text-five {
@@ -81,11 +81,12 @@
     width: 80%;
   }
 
-
-    .img-two {
+  .img-two {
     width: 100% ;
     max-width: 350px; 
     height: auto; 
+    position: relative;
+    bottom: 20px;
   }
 
 /* ==========================================================================
@@ -94,6 +95,7 @@
 
   .button-header {
     padding: 5px 10px;
+    border-radius: 15px;
   }
 
 /* ==========================================================================
@@ -102,9 +104,10 @@
 
   .conteiner {
     flex-direction: column ;
-    gap: 20px;
+    gap: 0px;
     padding: 0 20px;
   }
+
   .aling {
     width: 100%;
     padding: 0 10px;
@@ -165,5 +168,12 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+.fundo {
+    background: #e8b4c4;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
 
 }

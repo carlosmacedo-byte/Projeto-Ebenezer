@@ -13,7 +13,7 @@
     scroll-behavior: smooth;
 }
 
-body {
+body:not(.fundo) {
     background: #E6BCC9;
 }
 
@@ -137,7 +137,6 @@ button {
 .text-two {
     font-size: 64px;
     font-weight: 600;
-    margin: 24px auto; 
     text-align: center;
 }
 
@@ -241,6 +240,11 @@ strong, b {
 
 .card-confeitaria:hover img {
     transform: scale(1.02);
+}
+
+.fundo {
+    background: #e8b4c4;
+    padding: 40px 0;
 }
 
 /* ==========================================================================
