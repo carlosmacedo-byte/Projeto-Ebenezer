@@ -128,50 +128,50 @@ button {
    ========================================================================== */
 
 .text-one {
-    font-size: 40px; /* Reduzido de 50px */
+    font-size: 40px; 
     font-weight: 600;
-    margin: 24px 0px 0px 0px; /* Reduzido de 30px */
+    margin: 24px 0px 0px 0px; 
     text-align: center;
 }
 
 .text-two {
-    font-size: 64px; /* Reduzido de 80px */
+    font-size: 64px;
     font-weight: 600;
-    margin: 24px auto; /* Reduzido de 30px */
+    margin: 24px auto; 
     text-align: center;
 }
 
 .text-tree {
     font-family: 'Montserrat', sans-serif;
-    margin: 0 0 16px 0; /* Reduzido de 20px */
+    margin: 0 0 16px 0; 
 }
 
 .text-fuor {
-    font-size: 64px; /* Reduzido de 80px */
+    font-size: 64px; 
     font-weight: 600;
     margin: 0; 
-    margin-bottom: 12px; /* Reduzido de 15px */
+    margin-bottom: 12px; 
 }
 
 .text-five {
-    font-size: 32px; /* Reduzido de 40px */
+    font-size: 32px; 
     font-weight: 600;
     text-align: center;
-    margin: 0 0 8px 0; /* Reduzido de 10px */
+    margin: 0 0 8px 0; 
 }
 
 .text-one-p1 {
-    font-size: 16px; /* Reduzido de 20px */
+    font-size: 16px; 
     font-weight: 450;
     font-family: 'Montserrat', sans-serif;
-    width: 480px; /* Reduzido de 600px */
-    margin: 32px auto; /* Reduzido de 40px */
+    width: 480px; 
+    margin: 32px auto; 
     line-height: 1.5;
     text-align: center;
 }
 
 .text-two-p2 {
-    font-size: 16px; /* Reduzido de 20px */
+    font-size: 16px; 
     font-weight: 450;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
@@ -180,13 +180,13 @@ button {
 
 .text-tree-p3 {
     text-align: center;
-    font-size: 12px; /* Reduzido de 15px */
+    font-size: 12px; 
     font-family: 'Montserrat', sans-serif;
-    padding: 0 0 8px 0; /* Reduzido de 10px */
+    padding: 0 0 8px 0; 
 }
     
 strong, b {
-    font-size: 20px; /* Reduzido de 25px */
+    font-size: 20px; 
 }
 
 .division {
@@ -202,7 +202,7 @@ strong, b {
 .cards-container {
     width: 100%;
     display: block;
-    margin-top: 40px; /* Reduzido de 80px */
+    margin-top: 40px; 
     text-align: center;
  }
 
@@ -211,8 +211,8 @@ strong, b {
     flex-direction: column;
     justify-content: space-between;
     
-    padding: 16px; /* Reduzido de 20px */
-    border-radius: 12px; /* Reduzido de 15px */
+    padding: 16px; 
+    border-radius: 12px; 
     text-align: center;
     
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
@@ -220,9 +220,9 @@ strong, b {
     transform: translateZ(0);
     contain: content;
     background: #5F291A;
-    font-size: 24px; /* Reduzido de 30px */
+    font-size: 24px; 
     color: white;
-    margin: 12px; /* Reduzido de 15px */
+    margin: 12px; 
 }
 
 .card-confeitaria:hover {
@@ -232,9 +232,9 @@ strong, b {
 }
 
 .card-confeitaria img {
-    width: 240px; /* Reduzido de 300px */
-    height: 280px; /* Reduzido de 350px */
-    border-radius: 8px; /* Reduzido de 10px */
+    width: 240px;
+    height: 280px; 
+    border-radius: 8px;
     transition: transform 0.3s ease;
     will-change: transform;
 }
@@ -251,13 +251,13 @@ strong, b {
     display: flex;
     justify-content: center; 
     align-items: center;     
-    gap: 40px; /* Reduzido de 50px */
+    gap: 40px;
     width: 100%;             
-    margin-top: 40px; /* Reduzido de 50px */
+    margin-top: 40px; 
 }
 
 .aling {
     display: flex;
     flex-direction: column;
-    width: 440px; /* Reduzido de 550px */
+    width: 440px;
 }
