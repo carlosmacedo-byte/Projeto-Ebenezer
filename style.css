@@ -128,17 +128,22 @@ button {
 }
 
 .button-body {
+    width: 220px;
     display: block;
-    margin: 16px auto; /* Reduzido de 20px auto */
+    margin: 16px auto; 
     background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
-    padding: 8px 32px; /* Reduzido de 10px 40px */
-    border-radius: 15px; /* Reduzido de 50px */
+    padding: 8px 10px; 
+    border-radius: 15px; 
     border: 1.5px solid #5F291A;
-    font-size: 20px; /* Reduzido de 20px */
+    font-size: 20px;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     position: relative;
     bottom: 20px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
 }
 
 .button-body:hover {
