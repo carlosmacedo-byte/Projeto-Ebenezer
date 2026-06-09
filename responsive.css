@@ -13,6 +13,11 @@
     left: 5% ;
   }
 
+main {
+  flex-wrap: wrap;
+  gap: 0;
+}
+
   /* ==========================================================================
    TEXTOS RESPONSIVOS
    ========================================================================== */
@@ -22,14 +27,14 @@
   }
 
   .text-one {
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 600;
     text-align: center;
     width: 80%;
-    margin: 30px auto 0 auto;
-}
+    margin: 0 auto;
+  }
 
-.text-two {
+  .text-two {
     font-size: 50px;
     font-weight: 600;
     text-align: center;
@@ -78,8 +83,11 @@
   }
 
   .img-one {
-    width: 80%;
+    width: 90%;
     height: auto;
+    margin: 96px 0 0 0;
+    position: relative; 
+    left: 0px;
   }
 
   .img-two {
@@ -117,6 +125,7 @@
  /* ==========================================================================
    CARROSSEL DE BOLOS RESPONSIVO
    ========================================================================== */
+
 
 .cards-container {
     display: flex;
