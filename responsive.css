@@ -57,7 +57,7 @@
 }
 
   .text-four {
-    font-size: 40px; 
+    font-size: 50px; 
     text-align: center;
   }
 
@@ -91,7 +91,7 @@
     max-width: 350px; 
     height: auto; 
     position: relative;
-    bottom: 20px;
+    bottom: 50px;
   }
 
 /* ==========================================================================
@@ -169,9 +169,9 @@
 }
 
 .card-confeitaria {
-    min-width: 67vw; 
-    max-width: 67vw;
-    flex: 0 0 67vw;
+    min-width: 70vw; 
+    max-width: 70vw;
+    flex: 0 0 70vw;
     scroll-snap-align: center; 
     margin: 0;
     padding: 20px;
@@ -192,11 +192,11 @@
 }
 
 .card-confeitaria:first-child {
-    margin-left: 10vw;
+    margin-left: 15vw;
 }
 
 .card-confeitaria:last-child {
-    margin-right: 10vw;
+    margin-right: 15vw;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -215,6 +215,18 @@
     background: #e8b4c4;
     padding: 20px 0;
     margin-top: 40px;
+}
+
+#fundo-unico {
+  background: #E6BCC9;
+}
+
+.container-fundo {
+     background: #e8b4c4;
+     border-radius: 0px;
+     width: 100vw;
+     display: block;
+     padding: 20px 0px 40px 0px; 
 }
 
 }
