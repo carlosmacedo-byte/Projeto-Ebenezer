@@ -13,13 +13,13 @@
     left: 5% ;
   }
 
-main {
-  flex-wrap: wrap;
-  gap: 0;
+  main {
+    flex-wrap: wrap;
+    gap: 0;
 }
 
   /* ==========================================================================
-   TEXTOS RESPONSIVOS
+   TEXTOS
    ========================================================================== */
 
   h1 {
@@ -41,14 +41,14 @@ main {
     margin: 20px 0;
 }
 
-.text-five {
+ .text-five {
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     margin-top: 20px;
 }
 
-.text-one-p1 {
+ .text-one-p1 {
     font-size: 15px;
     font-weight: 450;
     width: 90%;
@@ -56,25 +56,21 @@ main {
     text-align: center;
 }
 
-  .text-fuor {
+  .text-four {
     font-size: 40px; 
     text-align: center;
   }
 
-  .text-tree-p3 {
+  .text-three-p3 {
     text-align: center;
     font-size: 8px; 
     font-family: 'Montserrat', sans-serif;
     padding: 0 0 8px 0; 
 }
 
-  .division {
-    display: none;
-  } 
-
 
 /* ==========================================================================
-   IMAGENS RESPONSIVAS
+   IMAGENS 
    ========================================================================== */
 
  .img-header {
@@ -99,31 +95,63 @@ main {
   }
 
 /* ==========================================================================
-   BOTÕES RESPONSIVOS
+   BOTÕES
    ========================================================================== */
 
   .button-header {
     padding: 5px 10px;
     border-radius: 15px;
+    border-color: #ffffff;
+  }
+
+  .button-body {
+    border-color: #ffffff;
+    color: #ffffff;
+    margin: 0 auto;
+  }
+
+  .button-card {
+/* RESETS OBRIGATÓRIOS */
+    position: relative;
+    top: auto;
+    left: auto;
+    height: auto;
+    text-indent: 0;
+    z-index: 3;
+
+
+    display: block;
+    width: 100px;
+    margin: 20px auto 0 auto;
+    background: #6D3A30;
+    padding: 8px 10px; 
+    border-radius: 10px; 
+    border: 1.5px solid #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
   }
 
 /* ==========================================================================
-   ESSÃO DE SOBRE NÓS RESPONSIVA
+   SOBRE NÓS
    ========================================================================== */
 
-  .conteiner {
+  .container {
     flex-direction: column ;
     gap: 0px;
     padding: 0 20px;
   }
 
-  .aling {
+  .align {
     width: 90%;
     padding: 0 10px;
   }
 
  /* ==========================================================================
-   CARROSSEL DE BOLOS RESPONSIVO
+   CARROSSEL
    ========================================================================== */
 
 
@@ -179,11 +207,14 @@ main {
     scrollbar-width: none;
 }
 
+ /* ==========================================================================
+   DESTAQUES
+   ========================================================================== */
+
 .fundo {
     background: #e8b4c4;
     padding: 20px 0;
     margin-top: 40px;
 }
-
 
 }

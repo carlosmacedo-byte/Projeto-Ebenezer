@@ -1,7 +1,5 @@
 /* ==========================================================================
    IMPORTAÇÕES E VARIÁVEIS GLOBAIS
-   CORREÇÃO: Unifiquei as fontes em um único link para reduzir as 
-   requisições ao servidor e aumentar a velocidade de carregamento da página.
    ========================================================================== */
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rochester&display=swap');
 
@@ -18,13 +16,16 @@ body:not(.fundo) {
 }
 
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     padding: 20px 0;
 }
 
 
 /* ==========================================================================
    CABEÇALHO (HEADER)
-   Esta seção mantém a nossa refatoração anterior de alta performance.
    ========================================================================== */
 
 header {
@@ -33,13 +34,13 @@ header {
   align-items: center;
   
   width: 74%;
-  padding: 12px 16px; /* Reduzido de 15px 20px */
-  border: 1.5px solid #5F291A; /* Ajuste sutil na borda para escala */
-  border-radius: 32px; /* Reduzido de 40px */
+  padding: 12px 16px; 
+  border: 1.5px solid #5F291A; 
+  border-radius: 32px; 
   background: rgba(95, 41, 26, 0.3);
   
   position: fixed;
-  top: 14px; /* Reduzido de 17px */
+  top: 14px; 
   left: 13%;
   z-index: 1000;
 }
@@ -53,7 +54,7 @@ h1 {
   font-family: "Montserrat", serif;
   font-weight: 900;
   color: #5F291A;
-  font-size: 38px; /* Reduzido de 40px */
+  font-size: 38px; 
   margin: 0;
 }
 
@@ -64,23 +65,14 @@ h1:hover {
     cursor: pointer;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
+.img-header {
+    width: 32px; 
+    height: 32px; 
 }
 
-.img-one {
-    width: 580px;
-    height: auto; /* Reduzido de 393px */
-    border-radius: 24px; /* Reduzido de 30px */
-    margin: 96px 0 30px 0; /* Reduzido de 120px */
-    align-self: flex-start;
-    position: relative;
-    right: 75px;
-    bottom: 30px;
-}
+/* ==========================================================================
+   TEXTOS
+   ========================================================================== */
 
 .text-one {
     font-size: 40px; 
@@ -103,78 +95,6 @@ main {
     bottom: 20px;
 }
 
-
-/* ==========================================================================
-   BOTÕES
-   ========================================================================== */
-
-button {
-    cursor: pointer;
-}
-
-.button-header {
-  display: inline-block;
-  background: linear-gradient(to bottom, #6D3A30, rgba(0, 0, 0, 0.0));
-  padding: 4px 16px; /* Reduzido de 5px 20px */
-  border-radius: 20px; /* Reduzido de 50px */
-  border: 1.5px solid #5F291A;
-}
-
-.button-header:hover {
-    background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
-    transform: translateY(-0.5px) scale(1.05);
-    transition: all 0.3s ease;
-    border-color: #fff;
-}
-
-.button-body {
-    width: 220px;
-    display: block;
-    margin: 16px auto; 
-    background: linear-gradient(to bottom, #6D3A30, rgba(00, 00, 00, 0.0));
-    padding: 8px 10px; 
-    border-radius: 15px; 
-    border: 1.5px solid #5F291A;
-    font-size: 20px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    bottom: 20px;
-    left: 5px;
-    text-decoration: none;
-    color: black;
-    text-align: center;
-}
-
-.button-body:hover {
-        background: linear-gradient(to bottom, rgba(00, 00, 00, 0.0), #6D3A30 );
-        transform: translateY(-0.5px) scale(1.05);
-        transition: all 0.3s ease;
-        color: #fff;
-        border-color: #fff;
-}
-
-/* ==========================================================================
-   IMAGENS E CONTAINERS GLOBAIS
-   ========================================================================== */
-
-.img-header {
-    width: 32px; /* Reduzido de 40px */
-    height: 32px; /* Reduzido de 40px */
-}
-
-
-
-.img-two {
-    width: 400px; /* Reduzido de 500px */
-}
-
-/* ==========================================================================
-   CONFIGURAÇÕES DE TEXTOS E ALINHAMENTOS
-   ========================================================================== */
-
-
-
 .text-two {
     font-size: 64px;
     font-weight: 600;
@@ -182,12 +102,12 @@ button {
     margin: 20px 0;
 }
 
-.text-tree {
+.text-three {
     font-family: 'Montserrat', sans-serif;
     margin: 0 0 16px 0; 
 }
 
-.text-fuor {
+.text-four {
     font-size: 64px; 
     font-weight: 600;
     margin: 0; 
@@ -210,7 +130,7 @@ button {
     margin: 0; 
 }
 
-.text-tree-p3 {
+.text-three-p3 {
     text-align: center;
     font-size: 12px; 
     font-family: 'Montserrat', sans-serif;
@@ -222,16 +142,93 @@ strong, b {
     font-size: 20px; 
 }
 
-.division {
-    font-size: 52px; 
-    font-weight: 400;
+
+/* ==========================================================================
+   BOTÕES
+   ========================================================================== */
+
+button {
+    cursor: pointer;
+}
+
+.button-header {
+  display: inline-block;
+  background: linear-gradient(to bottom, #6D3A30, transparent);
+  padding: 4px 16px; 
+  border-radius: 20px; 
+  border: 1.5px solid #5F291A;
+}
+
+.button-header:hover {
+    background: linear-gradient(to bottom, transparent, #6D3A30 );
+    transform: translateY(-0.5px) scale(1.05);
+    transition: all 0.3s ease;
+    border-color: #fff;
+}
+
+.button-body {
+    width: 220px;
+    display: block;
+    margin: 16px auto; 
+    background: linear-gradient(to bottom, #6D3A30, transparent);
+    padding: 8px 10px; 
+    border-radius: 15px; 
+    border: 1.5px solid #5F291A;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    bottom: 20px;
+    left: 5px;
+    text-decoration: none;
+    color: black;
     text-align: center;
 }
 
+.button-body:hover {
+    background: linear-gradient(to bottom, transparent, #6D3A30 );
+    transform: translateY(-0.5px) scale(1.05);
+    transition: all 0.3s ease;
+    color: #fff;
+    border-color: #fff;
+}
+
+.button-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-indent: -9999px;
+    background: transparent;
+    border: none;
+}
+
 /* ==========================================================================
-   CONFIGURAÇÕES DOS CARDS (SESSÃO DE SERVIÇOS/PRODUTOS)
+   IMAGENS BODY
    ========================================================================== */
-.conteiner-fundo {
+
+.img-one {
+    width: 580px;
+    height: auto;
+    border-radius: 24px; 
+    margin: 96px 0 30px 0; 
+    align-self: flex-start;
+    position: relative;
+    right: 75px;
+    bottom: 30px;
+}
+
+.img-two {
+    width: 400px;
+}
+
+/* ==========================================================================
+   CARDS
+   ========================================================================== */
+
+.container-fundo {
      background: #e8b4c4;
      border-radius: 20px;
      width: 90vw;
@@ -267,8 +264,8 @@ strong, b {
 }
 
 .card-confeitaria:hover {
-    transform: translateY(-6px); /* Reduzido de -8px para manter proporção da animação */
-    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15); /* Sombra ajustada */
+    transform: translateY(-6px); 
+    box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.15);
     border-color: #ffffff;
 }
 
@@ -284,6 +281,10 @@ strong, b {
     transform: scale(1.02);
 }
 
+/* ==========================================================================
+   DESTAQUES
+   ========================================================================== */
+
 .fundo {
     background: #e8b4c4;
     padding: 40px 0;
@@ -295,10 +296,10 @@ strong, b {
 }
 
 /* ==========================================================================
-   CONFIGURAÇÕES SECTION (SESSÃO DE SOBRE NÓS)
+   SOBRE NÓS
    ========================================================================== */
 
-.conteiner {
+.container {
     display: flex;
     justify-content: center; 
     align-items: center;     
@@ -307,7 +308,7 @@ strong, b {
     margin-top: 40px; 
 }
 
-.aling {
+.align {
     display: flex;
     flex-direction: column;
     width: 440px;
