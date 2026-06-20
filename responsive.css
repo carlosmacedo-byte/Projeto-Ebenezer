@@ -101,11 +101,12 @@
   .button-header {
     padding: 5px 10px 2px 10px;
     border-radius: 15px;
-    border-color: #ffffff;
+    border: 1px solid  #ffffff;
+    
   }
 
   .button-body {
-    border-color: #ffffff;
+    border: 1.3px solid #ffffff;
     color: #ffffff;
     margin: 0 auto;
   }
