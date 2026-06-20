@@ -249,7 +249,7 @@ button {
     flex-direction: column;
     justify-content: space-between;
     
-    padding: 16px; 
+    padding: 15px; 
     border-radius: 12px; 
     text-align: center;
     
@@ -270,7 +270,7 @@ button {
 }
 
 .card-confeitaria img {
-    width: 240px;
+    width: 217px;
     height: 280px; 
     border-radius: 8px;
     transition: transform 0.3s ease;
