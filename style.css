@@ -233,7 +233,7 @@ button {
      border-radius: 20px;
      width: 90vw;
      display: block;
-     padding: 20px 20px 40px 20px; 
+     padding: 20px 0px 40px;
      margin: 0 auto;
 }
 
@@ -250,6 +250,7 @@ button {
     justify-content: space-between;
     
     padding: 16px; 
+    padding: 14px; 
     border-radius: 12px; 
     text-align: center;
     
@@ -260,7 +261,7 @@ button {
     background: #5F291A;
     font-size: 24px; 
     color: white;
-    margin: 12px; 
+    margin: 10px; 
 }
 
 .card-confeitaria:hover {
