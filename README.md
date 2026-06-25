@@ -7,5 +7,19 @@ Aqui está link Git para visualização das atualizações: <a href="https://car
 
 <h2>Técnologias Utilizadas</h2>
 
-<p class="tecnologia">HTML</p>
-<p class="tecnologia">CSS</p>
+<img 
+    align="left" 
+    alt="HTML"
+    title="HTML" 
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" 
+/>
+<img 
+    align="left" 
+    alt="CSS" 
+    title="CSS"
+    width="30px" 
+    style="padding-right: 10px;" 
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" 
+/>
